@@ -1,0 +1,152 @@
+/* -Change the font,
+design the hero Image(change the background)
+change the button*/
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+html {
+    font-size: 60%;
+}
+
+body {
+    font-family: "inter", sans-serif;
+    line-height: 1;
+    font-weight: 200;
+    color: black;
+}
+
+/*-----------------Fisrt section---------------*/
+.main {
+    max-width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    display: grid;
+    background-image: url("background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+
+}
+
+.motto{
+    font-size: 1.5vw;
+    line-height: 105%;
+    margin-bottom: 5%;
+    font-weight: 100;
+    text-align: center;
+}
+.main-head {
+    font-size: 4.5vw;
+    font-weight: 200;
+    line-height: 105%;
+    margin-bottom: 15px;
+    letter-spacing: -0.5px;
+    text-align: center;
+}
+
+.action-but:link, .action-but:visited {
+    background-color: cornflowerblue;
+    color: white;
+    font-size: 2rem;
+    padding: 1.6rem 3.2rem;
+    border-radius: 110px;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: inset 0 0 0 1.5px white;
+    transition: background-color 500ms;
+}
+
+.action-but:hover, .action-but:active {
+    background-color: rgb(76, 113, 180);
+    color: white;
+    font-size: 2rem;
+    padding: 1.6rem 3.2rem;
+    border-radius: 110px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/*-------------------header----------------------*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6rem;
+    padding: 10px 10px 10px 10px;
+}
+.logo {
+    height: 9.5rem;
+}
+
+.main-nav-list {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+
+.main-nav-link:link, .main-nav-link:visited {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 170%;
+    transition: all 500ms;
+}
+
+.main-nav-link:hover, .main-nav-link:active {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 170%;
+}
+
+/*-----------------grid-reusables---------------*/
+
+.grid {
+    display: grid;
+    gap: 9.6rem;
+}
+
+.grid--2--cols {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3--cols {
+    grid-template-columns: repeat(3,1fr);
+}
+
+.grid--4--cols {
+    grid-template-columns: repeat(4,1fr);
+}
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 3.2rem;
+}
+
+/*---------------section-prob---------------*/
+
+/*----------section-ing--------------------*/
+
+.ingre {
+    padding: 9.6rem 0;
+}
+
+.step-img{
+    width: 50%;
+}
+
+.head-ing {
+    text-align: center;
+    line-height: 1.2;
+    font-size: 4.4rem;
+}
+
+
+
+
