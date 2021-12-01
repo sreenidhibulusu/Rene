@@ -17,20 +17,21 @@ body {
     line-height: 1;
     font-weight: 200;
     color: black;
+    font-size: 20px;
 }
 
 /*-----------------Fisrt section---------------*/
 .main {
-    max-width: 100%;
-    height: 100vh;
-    margin: 0 auto;
+    width: 100%;
     display: grid;
-    background-image: url("background.png");
-    background-position: center;
-    background-repeat: no-repeat;
+    margin: 0 auto;
+    background-image: linear-gradient(rgba(32, 1, 1, 0.4), rgba(27, 0, 0, 0.4)),url(assets/images/hero-image.png);
+    height: 100vh;
     background-size: cover;
+    background-position: center;
+    position: relative;
+    background-attachment: fixed;
     text-align: center;
-
 }
 
 .motto{
@@ -39,18 +40,20 @@ body {
     margin-bottom: 5%;
     font-weight: 100;
     text-align: center;
+    color: rgb(197, 192, 192);
 }
 .main-head {
     font-size: 4.5vw;
-    font-weight: 200;
+    font-weight: 100;
     line-height: 105%;
     margin-bottom: 15px;
     letter-spacing: -0.5px;
     text-align: center;
+    color: rgb(250, 235, 235);
 }
 
 .action-but:link, .action-but:visited {
-    background-color: cornflowerblue;
+    background-color: rgb(81, 190, 136);
     color: white;
     font-size: 2rem;
     padding: 1.6rem 3.2rem;
@@ -62,7 +65,7 @@ body {
 }
 
 .action-but:hover, .action-but:active {
-    background-color: rgb(76, 113, 180);
+    background-color: rgb(49, 128, 82);
     color: white;
     font-size: 2rem;
     padding: 1.6rem 3.2rem;
@@ -77,21 +80,24 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 6rem;
-    padding: 10px 10px 10px 10px;
+    padding: 10px 150px 10px 150px;
 }
 .logo {
-    height: 9.5rem;
+    padding-top: 55px;
+    height: 25rem;
 }
 
 .main-nav-list {
+    padding-top: 55px;
     list-style: none;
     display: flex;
-    gap: 3rem;
+    gap: 4rem;
+    font-size: 15px;
 }
 
 .main-nav-link:link, .main-nav-link:visited {
     text-decoration: none;
-    color: black;
+    color: rgb(247, 240, 240);
     font-weight: 500;
     font-size: 170%;
     transition: all 500ms;
@@ -130,9 +136,55 @@ body {
 }
 
 /*---------------section-prob---------------*/
+.prob-class {
+    position: relative;
+    width: 100%;
+}
+.prob-img {
+    width: 150%;
+    height: auto;
+    opacity: 1;
+    display: block;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    width: 150%;
+    height: auto;
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+   transition: 0.5s ease;
+   background-color: black;
+}
+
+.prob-class:hover .middle{
+    opacity: 0.7;
+}
+
+.prob-para {
+    color:white;
+    font-size: 20px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   -webkit-transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%,-50%);
+   transform: translate(-50%,-50%);
+   text-align: center;
+}
 
 /*----------section-ing--------------------*/
-
+.subheading{
+    text-align: center;
+    padding-left: 40%;
+    padding-top: 150%;
+}
 .ingre {
     padding: 9.6rem 0;
 }
@@ -147,6 +199,18 @@ body {
     font-size: 4.4rem;
 }
 
+/*----------section-prod-det-------------------*/
 
+.product {
+        max-width: 120rem;
+        margin: 0 auto;
+        padding: 3.2rem;
+}
 
+.val-img {
+    width: 150%;
+    height: 100%;
+    display: block;
+    padding: ;
+}
 
