@@ -14,7 +14,6 @@ html {
 
 body {
     font-family: "inter", sans-serif;
-    line-height: 1;
     font-weight: 200;
     color: black;
     font-size: 20px;
@@ -36,11 +35,13 @@ body {
 
 .motto{
     font-size: 1.5vw;
-    line-height: 105%;
+    line-height: 100%;
     margin-bottom: 5%;
     font-weight: 100;
     text-align: center;
-    color: rgb(197, 192, 192);
+    color: rgb(255, 255, 255);
+    margin-right: 0;
+    margin-left: 0;
 }
 .main-head {
     font-size: 4.5vw;
@@ -85,6 +86,10 @@ body {
     display: inline-block;
 }
 
+.slogan{
+    margin: 0;
+}
+
 /*-------------------header----------------------*/
 .header {
     display: flex;
@@ -92,10 +97,6 @@ body {
     align-items: center;
     height: 6rem;
     padding: 10px 150px 10px 150px;
-}
-.logo {
-    padding-top: 55px;
-    height: 25rem;
 }
 
 .main-nav-list {
@@ -110,7 +111,7 @@ body {
     text-decoration: none;
     color: rgb(247, 240, 240);
     font-weight: 500;
-    font-size: 170%;
+    font-size: 160%;
     transition: all 500ms;
 }
 
@@ -148,15 +149,16 @@ body {
 
 /*---------------section-prob---------------*/
 .section-prod {
-    padding-left: 0;
     margin: 0;
 }
 .prob-class {
     position: relative;
     width: 100%;
+    padding: 0;
+    margin: 0;
 }
 .prob-img {
-    width: 150%;
+    width: 110%;
     height: auto;
     opacity: 1;
     display: block;
@@ -165,7 +167,7 @@ body {
 }
 
 .middle {
-    width: 150%;
+    width: 110%;
     height: auto;
     transition: 0.5s ease;
     opacity: 0;
